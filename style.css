@@ -1,29 +1,79 @@
-h1, body, ul, li, p{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 1.2rem;
-    font-family: Arial;
+@import url(https://fonts.googleapis.com/css2?family=Damion&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap);
+.l-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-a{
-    text-decoration: none;
-    color: white;
+
+.l-header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
 }
-.header{
-    display: flex;
-    background-color: black;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
+
+.l-header__item {
+  background: #74c7d5;
+  padding: 40px 32px 16px 32px;
+  margin-right: 5px;
+  border-radius: 0px 0px 5px 5px;
 }
-.header__menu{
-    display: flex;
+
+.l-header__logo {
+  color: white;
+  font-family: 'Damion', sans-serif;
+  font-size: 1.2rem;
 }
-.header__item{
-    background-color: yellow;
-    padding: 20px 10px 5px 10px;
-    margin-right: 5px;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
-.header__logo{
-    color: white;
+
+html {
+  scroll-behavior: smooth;
 }
+
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+h1, h2, h3, p, a {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+#services {
+  background: #b24a50;
+}
+
+#contacts {
+  background: #75b4aa;
+}
+
+.colorServices {
+  background: #df5c64;
+}
+/*# sourceMappingURL=style.css.map */
