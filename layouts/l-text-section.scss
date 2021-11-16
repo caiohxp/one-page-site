@@ -1,0 +1,35 @@
+.l-text-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    &__container{
+        margin: 0 16.6%;
+    }
+    &__title{
+        font-size: 3rem;
+        margin: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    &__larger-text{
+        font-size: 1rem;
+        margin: 10px;
+        font-weight: 500;
+    }
+    &__container-title{
+        font-size: 1.5rem;
+        margin: 10px 0;
+        font-weight: 500;
+    }
+    &__text{
+        font-size: 0.7rem;
+    }
+    &__local-name{
+        font-size: 1rem;
+        color:  #c0dfda;
+        margin-bottom: 10px;
+    }
+    &__up{
+        text-transform: uppercase;
+    }
+}

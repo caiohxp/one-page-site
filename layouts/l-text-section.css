@@ -1,0 +1,47 @@
+.l-text-section {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-text-section__container {
+  margin: 0 16.6%;
+}
+
+.l-text-section__title {
+  font-size: 3rem;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.l-text-section__larger-text {
+  font-size: 1rem;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.l-text-section__container-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.l-text-section__text {
+  font-size: 0.7rem;
+}
+
+.l-text-section__local-name {
+  font-size: 1rem;
+  color: #c0dfda;
+  margin-bottom: 10px;
+}
+
+.l-text-section__up {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=l-text-section.css.map */

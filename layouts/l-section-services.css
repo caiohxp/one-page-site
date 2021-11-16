@@ -1,0 +1,71 @@
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.boxes__content {
+  position: relative;
+  top: 50px;
+  background: #c8535a;
+  opacity: 0.8;
+  width: 12rem;
+  height: 37vh;
+  margin: 50px 10px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+.boxes__circle {
+  margin-top: 20px;
+  width: 5.5rem;
+  height: 5.5rem;
+  background: #ffffff;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxes__inner-circle {
+  width: 5rem;
+  height: 5rem;
+  background: #ffffff;
+  border-radius: 100px;
+  border: solid 2px #c8535a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxes__inner-circle img {
+  width: 3rem;
+  height: 4rem;
+}
+/*# sourceMappingURL=l-section-services.css.map */

@@ -2,35 +2,64 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: fixed;
   width: 100%;
   z-index: 10;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 1.4rem 16%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.l-header #ihome {
+  background: #74c7d5;
 }
 
 .l-header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 100px;
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
 }
 
 .l-header__item {
-  background: #74c7d5;
   padding: 40px 32px 16px 32px;
-  margin-right: 5px;
+  margin-left: 5px;
   border-radius: 0px 0px 5px 5px;
 }
 
 .l-header__logo {
   color: white;
-  font-family: 'Damion', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Damion', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .menu-dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .menu-dropdown__1, .menu-dropdown__2, .menu-dropdown__3 {
+    background: #fff;
+    height: 7px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 2px;
+  }
 }
 /*# sourceMappingURL=l-header.css.map */

@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acrostia</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script/index.js"></script>
 </head>
 <body>
-    <header class="l-header">
-        <h1 class="l-header__logo" href="">Acrostia</h1>
+    <header class="l-header" id="header">
+        <h1 class="l-header__logo" href="">acrostia</h1>
+        <div class="menu-dropdown">
+            <div class="menu-dropdown__1"></div>
+            <div class="menu-dropdown__2"></div>
+            <div class="menu-dropdown__3"></div>
+        </div>
         <nav class="l-header__menu">
             <ul class="l-header__list">
                 <li><a id="ihome" class="l-header__item" href="#home">Home</a></li>
@@ -18,37 +24,133 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="l-main">
         <section id="home">
             <div>
                 <div><img src="http://placeimg.com/1920/1080/tech" alt=""></div>
-                <div></div>
+                <!-- <div></div>
                 <div></div>
                 <div>
                     <button><</button>
                     <button>></button>
-                </div>
+                </div> -->
             </div>
         </section>
-        <section id="services">
-            <div>
-                <h2>OUR SERVICES</h2>
-                <h3>
-                    Cras commodo mattis justo nec <span>lobortis</span>. Nam ut tellus
+        <section class="l-text-section" id="services">
+            <div class="l-text-section__container">
+                <p class="l-text-section__title">Our Services</p>
+                <p class="l-text-section__larger-text l-text-section__up">
+                    Cras commodo mattis justo nec <span style="color: #ec9da2;">lobortis</span>. Nam ut tellus
                     lobortis, ullamcorper massa sit amet
-                  </h3>
-                  <p>
+                </p>
+                <p class="l-text-section__text">
                     Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
                     Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim
                     diam, ullamcorper quis libero et, ultricies<br> commodo est. Quisque at
                     ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
                     lacus, eget laoreet erat posuere quis.
-                  </p>
+                </p>
+                <div class="boxes">
+                    <div class="boxes__content">
+                        <div class="boxes__circle">
+                            <div class="boxes__inner-circle">
+                                <img src="img/lightball.png" alt="">
+                            </div>
+                        </div>
+                        <p class="l-text-section__container-title l-text-section__up">Researching</p>
+                        <p class="l-text-section__text">Praesent interdum blandit quam.<br>
+                        Asunt in anim uis aute irure dolor<br>
+                        in reprehenderit in voluptate velit<br>
+                        esse cillum dolore</p>
+                    </div>
+                    <div class="boxes__content">
+                        <div class="boxes__circle">
+                            <div class="boxes__inner-circle">
+                                <img src="img/m-wand.png" alt="">
+                            </div>
+                        </div>
+                        <p class="l-text-section__container-title l-text-section__up">Design</p>
+                        <p class="l-text-section__text">Praesent interdum blandit quam.<br>
+                        Asunt in anim uis aute irure dolor<br>
+                        in reprehenderit in voluptate velit<br>
+                        esse cillum dolore</p>
+                    </div>
+                    <div class="boxes__content">
+                        <div class="boxes__circle">
+                            <div class="boxes__inner-circle">
+                                <img src="img/giars.png" alt="">
+                            </div>
+                        </div>
+                        <p class="l-text-section__container-title l-text-section__up">Development</p>
+                        <p class="l-text-section__text">Praesent interdum blandit quam.<br>
+                        Asunt in anim uis aute irure dolor<br>
+                        in reprehenderit in voluptate velit<br>
+                        esse cillum dolore</p>
+                    </div>
+                    <div class="boxes__content">
+                        <div class="boxes__circle">
+                            <div class="boxes__inner-circle">
+                                <img src="img/rocket.png" alt="">
+                            </div>
+                        </div>
+                        <p class="l-text-section__container-title l-text-section__up">Launch</p>
+                        <p class="l-text-section__text">Praesent interdum blandit quam.<br>
+                        Asunt in anim uis aute irure dolor<br>
+                        in reprehenderit in voluptate velit<br>
+                        esse cillum dolore</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="contacts">
-            <div>
-                <h2>CONTACT US</h2>
+        <section class="l-text-section" id="contacts">
+            <div class="l-text-section__container">
+                <p class="l-text-section__title">CONTACT US</p>
+                <p class="l-text-section__text">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
+                Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim
+                diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
+                ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
+                lacus, eget laoreet erat posuere quis.
+                </p>
+                <div class="information">
+                    <div>
+                        <p class="l-text-section__container-title">Address</p>
+                        <div style="background: gray;" id="divaddress">
+                            <div>
+                                <div style="margin-bottom: 60px;">
+                                    <p class="l-text-section__local-name">Acrostia</span></p>
+                                    <p>Sevenoaks Rd</p>
+                                    <p>Sevenoaks TN14 7HR UK</p>
+                                </div>
+                                <div>
+                                    <div class="information__contacts">
+                                        <p>Phone:</p>
+                                        <p>+44&nbsp;555&nbsp;555&nbsp;555</p>
+                                    </div>
+                                    <div class="information__contacts">
+                                        <p>Fax:</p>
+                                        <p>+44&nbsp;556&nbsp;555&nbsp;555</p>
+                                    </div>
+                                    <div class="information__contacts">
+                                        <p>E-mail:</p>
+                                        <p>info@acrostia.com</p>
+                                    </div>
+                                    <div class="information__contacts">
+                                        <p>Skype:</p>
+                                        <p>Ac0stia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <img id="imgaddress" src="img/address.png" alt="">
+                        </div>
+                    </div>
+                    <div style="background: black;" id="ask">
+                        <p class="l-text-section__container-title">Ask a Question</p>
+                        <input type="text" id="name" placeholder="Name">
+                        <br>
+                        <textarea name="your-question" placeholder="Your Question" id="" cols="30" rows="10"></textarea>
+                        <button>Send</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

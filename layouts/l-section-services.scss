@@ -1,0 +1,42 @@
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    &__content{
+        position: relative;
+        top: 50px;
+        background: #c8535a;
+        opacity: 0.8;
+        width: 12rem;
+        height: 37vh;
+        margin: 50px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+    &__circle{
+        margin-top: 20px;
+        width: 5.5rem;
+        height: 5.5rem;
+        background: #ffffff;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__inner-circle{
+        width: 5rem;
+        height: 5rem;
+        background: #ffffff;
+        border-radius: 100px;
+        border: solid 2px #c8535a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 3rem;
+            height: 4rem;
+        }
+    }
+}

@@ -1,20 +1,19 @@
 @import "layouts/l-header";
-@import "layouts/fonts";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
+@import "base/fonts";
+@import "base/reset";
+@import "layouts/l-main";
+
 html{
     scroll-behavior: smooth;
+}
+body{
+    color: #ffffff;
 }
 img{
     width: 100%;
     height: 100vh;
 }
-h1, h2, h3, p, a{
+h1, h2, h3, h4, p, a{
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
@@ -24,14 +23,44 @@ section{
     width: 100%;
 }
 #services{
-    background: #b24a50;
+    background-image: url('./img/services-bg-pattern.png');
 }
 #contacts{
-    background: #75b4aa;
+    background-image: url('./img/contacts-bg-pattern.png');
 }
-.colorServices{
-    background: #df5c64;
+.information{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    &__contacts{
+        display: flex;
+        margin: 5px 0;
+    }
 }
+#name{
+    margin-bottom: 10px;
+}
+#divaddress{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 30rem;
+    height: 15rem;
+}
+#imgaddress{
+    width: 200px;
+    height: 200px;
+}
+input::placeholder, textarea::placeholder{
+    color: #75b4aa;
+}
+input, textarea{
+    background: #68a097;
+    border-radius: 5px;
+}
+
+
 // h2{
 //     font-size: 500px;
 // }
