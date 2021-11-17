@@ -1,0 +1,140 @@
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: start;
+  position: relative;
+  top: 50px;
+  width: 100%;
+}
+
+.information__address {
+  width: 380px;
+  height: 15rem;
+}
+
+.information__containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10rem;
+}
+
+.information__itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information__ask-question {
+  width: 380px;
+  height: 15rem;
+}
+
+.information__container-contacts {
+  width: 10rem;
+}
+
+.information__item-container-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information__form {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'name     name     email    email' 'textarea textarea textarea textarea' '.        button    button  .';
+  gap: 16px;
+}
+
+.information__name {
+  width: 182px;
+  height: 2rem;
+  border-radius: 5px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: name;
+  background: #68a097;
+  border: none;
+}
+
+.information__email {
+  width: 182px;
+  height: 2rem;
+  border-radius: 5px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: email;
+  border: none;
+}
+
+.information__img {
+  width: 190px;
+  height: 175px;
+}
+
+.information__textarea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: textarea;
+  width: 380px;
+  height: 8rem;
+  background: #68a097;
+  border: none;
+  border-radius: 5px;
+}
+
+.information button {
+  width: 10rem;
+  height: 2rem;
+  background: #df5c64;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: button;
+}
+
+.information input::-webkit-input-placeholder, .information textarea::-webkit-input-placeholder {
+  color: #75b4aa;
+}
+
+.information input:-ms-input-placeholder, .information textarea:-ms-input-placeholder {
+  color: #75b4aa;
+}
+
+.information input::-ms-input-placeholder, .information textarea::-ms-input-placeholder {
+  color: #75b4aa;
+}
+
+.information input::placeholder, .information textarea::placeholder {
+  color: #75b4aa;
+}
+/*# sourceMappingURL=l-section-contacts.css.map */

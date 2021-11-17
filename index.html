@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acrostia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script/index.js"></script>
+    <script type="text/javascript" src="script/index.js"></script>
+    <script type="text/javascript" src="home.json"></script>
 </head>
 <body>
     <header class="l-header" id="header">
@@ -27,29 +28,24 @@
     <main class="l-main">
         <section id="home">
             <div>
-                <div><img src="http://placeimg.com/1920/1080/tech" alt=""></div>
-                <!-- <div></div>
-                <div></div>
-                <div>
-                    <button><</button>
-                    <button>></button>
-                </div> -->
             </div>
         </section>
         <section class="l-text-section" id="services">
-            <div class="l-text-section__container">
-                <p class="l-text-section__title">Our Services</p>
-                <p class="l-text-section__larger-text l-text-section__up">
-                    Cras commodo mattis justo nec <span style="color: #ec9da2;">lobortis</span>. Nam ut tellus
-                    lobortis, ullamcorper massa sit amet
-                </p>
-                <p class="l-text-section__text">
-                    Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
-                    Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim
-                    diam, ullamcorper quis libero et, ultricies<br> commodo est. Quisque at
-                    ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
-                    lacus, eget laoreet erat posuere quis.
-                </p>
+            <div class="l-text-section__container div-services">
+                <div>
+                    <p class="l-text-section__title">Our Services</p>
+                    <p class="l-text-section__larger-text l-text-section__up">
+                        Cras commodo mattis justo nec <span style="color: #ec9da2;">lobortis</span>. Nam ut tellus
+                        lobortis, ullamcorper massa sit amet
+                    </p>
+                    <p class="l-text-section__text">
+                        Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
+                        Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim
+                        diam, ullamcorper quis libero et, ultricies<br> commodo est. Quisque at
+                        ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
+                        lacus, eget laoreet erat posuere quis.
+                    </p>
+                </div>
                 <div class="boxes">
                     <div class="boxes__content">
                         <div class="boxes__circle">
@@ -107,48 +103,50 @@
                 <p class="l-text-section__title">CONTACT US</p>
                 <p class="l-text-section__text">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
                 Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim
-                diam, ullamcorper quis libero et, ultricies commodo est. Quisque at
+                diam, ullamcorper quis libero et, ultricies<br> commodo est. Quisque at
                 ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
                 lacus, eget laoreet erat posuere quis.
                 </p>
                 <div class="information">
-                    <div>
+                    <div class="information__address">
                         <p class="l-text-section__container-title">Address</p>
-                        <div style="background: gray;" id="divaddress">
-                            <div>
-                                <div style="margin-bottom: 60px;">
+                        <div class="information__containers">
+                            <div class="information__itens">
+                                <div class="information__logradouro">
                                     <p class="l-text-section__local-name">Acrostia</span></p>
-                                    <p>Sevenoaks Rd</p>
-                                    <p>Sevenoaks TN14 7HR UK</p>
+                                    <p class="l-text-section__address-text">Sevenoaks Rd</p>
+                                    <p class="l-text-section__address-text">Sevenoaks TN14 7HR UK</p>
                                 </div>
-                                <div>
-                                    <div class="information__contacts">
-                                        <p>Phone:</p>
-                                        <p>+44&nbsp;555&nbsp;555&nbsp;555</p>
-                                    </div>
-                                    <div class="information__contacts">
-                                        <p>Fax:</p>
-                                        <p>+44&nbsp;556&nbsp;555&nbsp;555</p>
-                                    </div>
-                                    <div class="information__contacts">
-                                        <p>E-mail:</p>
-                                        <p>info@acrostia.com</p>
-                                    </div>
-                                    <div class="information__contacts">
-                                        <p>Skype:</p>
-                                        <p>Ac0stia</p>
-                                    </div>
-                                </div>
+                                <ul class="information__container-contacts">
+                                    <li class="information__item-container-contacts">
+                                        <p class="l-text-section__address-text">Phone:</p>
+                                        <p class="l-text-section__address-text">+44 555 555 555</p>
+                                    </li>
+                                    <li class="information__item-container-contacts">
+                                        <p class="l-text-section__address-text">Fax:</p>
+                                        <p class="l-text-section__address-text">+44 556 555 555</p>
+                                    </li>
+                                    <li class="information__item-container-contacts">
+                                        <p class="l-text-section__address-text">E-mail:</p>
+                                        <p class="l-text-section__address-text" style="text-decoration: underline;">info@acrostia.com</p>
+                                    </li>
+                                    <li class="information__item-container-contacts">
+                                        <p class="l-text-section__address-text">Skype:</p>
+                                        <p class="l-text-section__address-text">Ac0stia</p>
+                                    </li>
+                                </ul>
                             </div>
-                            <img id="imgaddress" src="img/address.png" alt="">
+                            <img class="information__img" src="img/address.png" alt="">
                         </div>
                     </div>
-                    <div style="background: black;" id="ask">
+                    <div class="information__ask-question">
                         <p class="l-text-section__container-title">Ask a Question</p>
-                        <input type="text" id="name" placeholder="Name">
-                        <br>
-                        <textarea name="your-question" placeholder="Your Question" id="" cols="30" rows="10"></textarea>
-                        <button>Send</button>
+                        <div class="information__form">
+                            <input type="text" class="information__name" placeholder="Name">
+                            <input type="email" class="information__email" placeholder="E-mail">
+                            <textarea class="information__textarea" name="textarea" placeholder="Your Question" id="" cols="30" rows="10"></textarea>
+                            <button class="l-text-section__send-button l-text-section__up">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>

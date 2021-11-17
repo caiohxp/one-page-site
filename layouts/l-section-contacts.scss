@@ -1,0 +1,83 @@
+.information{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: start;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    &__address{
+        width: 380px;
+        height: 15rem;
+    }
+    &__containers{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 10rem;
+    }
+    &__itens{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__ask-question{
+        width: 380px;
+        height: 15rem;
+    }
+    &__container-contacts{
+        width: 10rem;
+    }
+    &__item-container-contacts{
+        display: flex; 
+        margin: 5px 0;
+        justify-content: space-between;
+    }
+    &__form{
+        display: grid;
+        grid-template-areas:
+        'name     name     email    email'
+        'textarea textarea textarea textarea'
+        '.        button    button  .';
+        gap: 16px;
+    }
+    &__name{
+        width: 182px;
+        height: 2rem;
+        border-radius: 5px;
+        grid-area: name;
+        background: #68a097;
+        border: none;
+    }
+    &__email{
+        width: 182px;
+        height: 2rem;
+        border-radius: 5px;
+        grid-area: email;
+        border: none;
+    }
+    &__img{
+        width: 190px;
+        height: 175px;
+    }
+    &__textarea{
+        grid-area: textarea;
+        width: 380px;
+        height: 8rem;
+        background: #68a097;
+        border: none;
+        border-radius: 5px;
+    } 
+    button{
+        width: 10rem;
+        height: 2rem;
+        background: #df5c64;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        grid-area: button;
+    }
+    input::placeholder, textarea::placeholder{
+        color: #75b4aa;
+    }
+}
