@@ -26,9 +26,6 @@ window.addEventListener("scroll", (event) => {
     var windowHeight = window.innerHeight
     || document.documentElement.clientHeight
     || document.body.clientHeight;
-    console.log("scroll",scroll);
-    console.log("largura/width", windowWidth);
-    console.log("altura/height", windowHeight);
     if(scroll < windowHeight){
         home.style.background = "#74c7d5";
         services.style.background = "transparent";
@@ -44,3 +41,10 @@ window.addEventListener("scroll", (event) => {
         contact.style.background = "#82c8bd";
     }
 });
+const menuDrop = document.querySelector('.menu-dropdown');
+console.log(menuDrop);
+function toggleMenu(){
+    const menu = document.querySelector('.l-header__menu');
+    menu.classList.toggle('active');
+}
+menuDrop.addEventListener('click', toggleMenu);

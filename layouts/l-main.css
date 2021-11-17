@@ -137,12 +137,12 @@
   text-align: start;
   position: relative;
   top: 50px;
-  width: 60rem;
+  width: 100%;
 }
 
 .information__address {
-  width: 27rem;
-  margin-right: 5px;
+  width: 380px;
+  height: 15rem;
 }
 
 .information__containers {
@@ -171,13 +171,12 @@
 }
 
 .information__ask-question {
-  margin-left: 40px;
-  width: 30rem;
-  height: 20rem;
+  width: 380px;
+  height: 15rem;
 }
 
 .information__container-contacts {
-  width: 12rem;
+  width: 10rem;
 }
 
 .information__item-container-contacts {
@@ -194,33 +193,35 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'name     name     email    email' 'textarea textarea textarea textarea' '.        button    button  .';
-  gap: 1.4rem;
+  gap: 16px;
 }
 
 .information__name {
-  width: 14rem;
+  width: 182px;
   height: 2rem;
   border-radius: 5px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: name;
-  background: #ff0000;
+  background: #68a097;
   border: none;
 }
 
 .information__email {
+  width: 182px;
   height: 2rem;
   border-radius: 5px;
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: email;
+  border: none;
 }
 
 .information__img {
-  width: 11.5rem;
-  height: 11.5rem;
+  width: 190px;
+  height: 175px;
 }
 
 .information__textarea {
@@ -228,9 +229,10 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: textarea;
-  width: 30rem;
+  width: 380px;
   height: 8rem;
   background: #68a097;
+  border: none;
   border-radius: 5px;
 }
 
@@ -239,6 +241,7 @@
   height: 2rem;
   background: #df5c64;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
