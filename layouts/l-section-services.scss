@@ -40,3 +40,19 @@
         }
     }
 }
+@media (max-width: 1285px){
+    .services-section{
+        height: 60rem;
+    }
+    .boxes{
+        justify-content: center;
+    }
+}
+@media (max-width: 655px){
+    .services-section{
+        height: 100rem;
+    }
+    .boxes{
+        justify-content: center;
+    }
+}

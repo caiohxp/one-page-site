@@ -25,6 +25,12 @@
   font-weight: 500;
 }
 
+.l-text-section__carrossel-title {
+  font-size: 3rem;
+  color: #74c7d5;
+  text-align: center;
+}
+
 .l-text-section__container-title {
   font-size: 1.5rem;
   font-weight: 500;

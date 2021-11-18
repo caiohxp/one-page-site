@@ -11,10 +11,13 @@ function readTextFile(file, callback) {
 }
 readTextFile("./home.json", function(text){
   var data = JSON.parse(text);
-  const img1 = document.querySelector('#img1');
-  const img2 = document.querySelector('#img2');
-  const img3 = document.querySelector('#img3');
-  img1.setAttribute('src', `${data[0].imagem}`);
-  img2.setAttribute('src', `${data[1].imagem}`);
-  img3.setAttribute('src', `${data[2].imagem}`);
+  const windowWidth = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+  const img = document.querySelectorAll('.carrossel__imagem');
+  const titulo = document.querySelectorAll('.carrossel__container-text');
+  for(var i = 0; i < img.length; i++){
+    img[i].style.backgroundImage = `url(${data[i].imagem})`;
+    titulo[i].innerHTML = `${data[i].titulo}`;
+  }
 });
