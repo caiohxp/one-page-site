@@ -21,6 +21,18 @@
   background: #74c7d5;
 }
 
+.l-header #ihome:hover {
+  background: #538e99;
+}
+
+.l-header #iservices:hover {
+  background: #773236;
+}
+
+.l-header #icontacts:hover {
+  background: #56817b;
+}
+
 .l-header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +62,6 @@
     width: 100%;
     height: 0;
     top: 70px;
-    right: 0px;
   }
   .l-header__menu.active .l-header__list {
     display: -webkit-box;
@@ -382,7 +393,7 @@ html {
 }
 
 body {
-  color: #ffffff;
+  color: #ff0000;
 }
 
 h1, h2, h3, h4, p, a {
@@ -408,5 +419,86 @@ section, img {
 
 #contacts {
   background-image: url("./img/contacts-bg-pattern.png");
+}
+
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel__slides-container {
+  height: 500px;
+  -webkit-transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+  transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+  position: relative;
+}
+
+.carrossel__slide-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.carrossel__slide-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carrossel__prev-btn, .carrossel__next-btn {
+  background: #010011;
+  padding: 16px;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  z-index: 100;
+}
+
+.carrossel__prev-btn:hover, .carrossel__next-btn:hover {
+  background: #0a036d;
+}
+
+.carrossel__prev-btn {
+  left: 0;
+}
+
+.carrossel__next-btn {
+  right: 0;
+}
+
+.carrossel__navigation-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 16px 0;
+}
+
+.carrossel__single-dot {
+  background: #333;
+  height: 16px;
+  width: 16px;
+  border: 2x solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  margin: 0 8px;
+}
+
+.carrossel__single-dot.active {
+  background: #eee;
 }
 /*# sourceMappingURL=style.css.map */

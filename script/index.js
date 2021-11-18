@@ -1,26 +1,9 @@
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
-}
-//usage:
-readTextFile("./home.json", function(text){
-    var data = JSON.parse(text);
-    var home = document.querySelector('#home')
-    home.style.backgroundImage = `url(${data[0].imagem})`;
-});
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
     var home = document.getElementById("ihome");
     var services = document.getElementById("iservices");
     var contact = document.getElementById("icontacts");
-    var windowWidth = window.innerWidth
+    const windowWidth = window.innerWidth
     || document.documentElement.clientWidth
     || document.body.clientWidth;
     var windowHeight = window.innerHeight

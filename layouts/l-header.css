@@ -20,6 +20,18 @@
   background: #74c7d5;
 }
 
+.l-header #ihome:hover {
+  background: #538e99;
+}
+
+.l-header #iservices:hover {
+  background: #773236;
+}
+
+.l-header #icontacts:hover {
+  background: #56817b;
+}
+
 .l-header__list {
   display: -webkit-box;
   display: -ms-flexbox;
