@@ -22,3 +22,20 @@ window.addEventListener("scroll", (event) => {
         contact.style.background = "#82c8bd";
     }
 });
+window.onresize = function(){
+    location.reload();
+ };
+ window.onload = function(){
+    var sec = document.querySelectorAll('section');
+    var car = document.querySelector('.carrossel__imagem');
+    var cont = document.querySelectorAll('.carrossel__container-text');
+    var ts = document.querySelectorAll('.carrossel__l-text-section');
+    const windowHeight = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    const windowWidth = window.innerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
+    console.log(windowHeight);
+    console.log(windowWidth);
+ }

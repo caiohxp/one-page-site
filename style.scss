@@ -2,6 +2,7 @@
 @import "base/fonts";
 @import "base/reset";
 @import "layouts/l-main";
+@import "layouts/mediaQ-layouts/mediaQ.scss";
 
 html{
     scroll-behavior: smooth;
@@ -12,7 +13,8 @@ section, img{
 }
 #services{
     background-image: url('./img/services-bg-pattern.png');
-}
+}   
 #contacts{
     background-image: url('./img/contacts-bg-pattern.png');
 }
+   

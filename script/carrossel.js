@@ -2,9 +2,6 @@ const slideImage = document.querySelectorAll(".carrossel__slide-image");
 const slidesContainer = document.querySelector(".carrossel__slides-container");
 const nextBtn = document.querySelector(".carrossel__next-btn");
 const prevBtn = document.querySelector(".carrossel__prev-btn");
-const windowWidth = window.innerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
 let numberOfImages = slideImage.length;
 let slideWidth = slideImage[0].clientWidth;
 let currentSlide = 0;

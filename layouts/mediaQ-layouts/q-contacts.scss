@@ -1,0 +1,130 @@
+@media (max-width: 1165px){
+    .contacts-section{
+        height: 960px;
+    }
+}
+@media (min-width: 1600px){
+    .contacts-section{
+        height: 1080px;
+    }
+    .l-text-section{
+        &__local-name{
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        &__send-button{
+            font-size: 2.6rem;
+        }
+        &__address-text{
+            font-size: 1.6rem;
+        }
+    }
+    .information{
+        top: 100px;
+        &__address{
+            width: 760px;
+            height: 30rem;
+        }
+        &__containers{
+            height: 20rem;
+        }
+        &__ask-question{
+            width: 760px;
+            height: 30rem;
+        }
+        &__container-contacts{
+            width: 20rem;
+        }
+        &__item-container-contacts{
+            margin: 10px 0;
+        }
+        &__email, &__name{
+            width: 364px;
+            height: 4rem;
+        }
+        &__img{
+            width: 380px;
+            height: 350px;
+        }
+        &__textarea{
+            width: 760px;
+            height: 16rem;
+        } 
+        button{
+            width: 20rem;
+            height: 4rem;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .contacts-section{
+        height: 540px;
+    }
+    .information{
+        width: 700px;
+        &__address, &__ask-question{
+            width: 340px;
+            height: 13rem;
+        }
+        &__containers{
+            height: 8rem;
+        }
+        &__container-contacts{
+            width: 8rem;
+        }
+        &__email, &__name{
+            width: 160px;
+            height: 1.8rem;
+        }
+        &__img{
+            width: 180px;
+            height: 150px;
+        }
+        &__textarea{
+            width: 340px;
+            height: 7rem;
+        } 
+        button{
+            width: 8rem;
+            height: 1.8rem;
+        }
+    }
+}
+@media (max-width: 425px){
+    .contacts-section{
+        height: 1000px;
+    }
+    .information{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        &__address, &__ask-question{
+            width: 340px;
+            height: 13rem;
+        }
+        &__containers{
+            height: 8rem;
+        }
+        &__container-contacts{
+            width: 8rem;
+        }
+        &__email, &__name{
+            width: 160px;
+            height: 1.8rem;
+        }
+        &__img{
+            width: 180px;
+            height: 150px;
+        }
+        &__textarea{
+            width: 340px;
+            height: 7rem;
+        } 
+        button{
+            width: 8rem;
+            height: 1.8rem;
+        }
+    }
+}

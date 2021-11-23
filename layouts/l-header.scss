@@ -13,6 +13,7 @@
     &__list{
         display: flex;
         position: relative;
+        right: 10px;
         z-index: 20;
         cursor: pointer;
 
@@ -32,50 +33,4 @@
         font-weight: 400;
     }
 
-}
-@media (max-width: 768px){
-    .l-header{
-        justify-content: center;
-        &__logo{
-            display: none;
-        }
-        &__list{
-            display: none;
-            width: 100%;
-            height: 100px;
-        }  
-        &.active{
-            background: rgba(0, 0, 0, 0.61);
-        }
-        &.active .l-header__logo{
-            font-size: 4rem;
-            display: block;
-        }
-        &.active .l-header__list{
-            display: flex;
-            gap: 10px;
-            height: 100vh;
-            margin-top: 100px;
-        }
-        &.active__item{
-            padding: 20px 40px;    
-            margin: 2rem 1rem;
-            border-radius: 5px;
-        }
-    }
-    .menu-dropdown{
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 40px;
-        margin-right: 60px;
-        cursor: pointer;
-        &__1, &__2, &__3{
-            background: #fff;
-            height: 10px;
-            width: 50px;
-            margin: 10px;
-            border-radius: 2px;
-        }
-    }
 }
