@@ -60,9 +60,9 @@
     .menu-dropdown{
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         margin-top: 20px;
-        margin-left: 10px;
+        margin-right: 10px;
         &__1, &__2, &__3{
             height: 8px;
             width: 40px;
@@ -78,12 +78,10 @@
         &.active .l-header__list{
             display: flex;
             position: relative;
-            right: 80px;
             flex-direction: column;
             align-items: center;
             gap: 50px;
             margin-top: 150px;
-            margin-left: 0;
         }
         &__item{
             padding: 20px;    

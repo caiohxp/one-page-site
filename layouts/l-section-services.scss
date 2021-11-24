@@ -1,25 +1,45 @@
+.services-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-services{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services__container-text{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .boxes{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     &__content{
         position: relative;
-        top: 50px;
         background: #c8535a;
         opacity: 0.8;
-        width: 12rem;
-        height: 16rem;
-        margin: 50px 10px 0 10px;
+        width: 21.5%;
+        height: 80%;
+        margin: 1%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
     }
     &__circle{
-        margin-top: 20px;
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 6rem;
+        height: 6rem;
         background: #ffffff;
         border-radius: 100px;
         display: flex;
@@ -27,8 +47,8 @@
         align-items: center;
     }
     &__inner-circle{
-        width: 5rem;
-        height: 5rem;
+        width: 5.5rem;
+        height: 5.5rem;
         background: #ffffff;
         border-radius: 100px;
         border: solid 2px #c8535a;

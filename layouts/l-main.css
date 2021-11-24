@@ -66,21 +66,15 @@
   height: 12rem;
 }
 
-@media (max-width: 375px) {
-  .carrossel {
-    width: 375px;
-  }
-  .carrossel__imagem {
-    width: 375px;
-  }
-}
-
 .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .boxes__content {
@@ -144,6 +138,20 @@
 .boxes__inner-circle img {
   width: 3rem;
   height: 4rem;
+}
+
+.contacts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .information {
@@ -213,9 +221,7 @@
 .information__form {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name     name     email    email'
- 'textarea textarea textarea textarea'
- '.        button    button  .';
+      grid-template-areas: 'name     name     email    email' 'textarea textarea textarea textarea' '.        button    button  .';
   gap: 16px;
 }
 

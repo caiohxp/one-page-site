@@ -1,8 +1,13 @@
+.home-section{
+    height: 100vh;
+    width: 100%;
+}
 .carrossel{
     width: 100%;
+    height: 100%;
     overflow: hidden;
     &__slides-container{
-        height: 40rem;
+        height: 100%;
         transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
         position: relative;
     }
@@ -13,7 +18,7 @@
     }
     &__imagem{
         width: 100%;
-        height: 40rem;
+        height: 100%;
         object-fit: cover;
         display: flex;
         align-items: center;
@@ -42,8 +47,8 @@
         right: 0;
     }
     &__container-text{
-        background: rgba(252, 250, 250, 0.733);
-        width: 41rem;
-        height: 12rem;
+        background: rgba(10, 10, 10, 0.733);
+        width: 45%;
+        height: 35%;
     }
 }

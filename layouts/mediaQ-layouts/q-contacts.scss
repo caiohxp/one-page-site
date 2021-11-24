@@ -1,130 +1,84 @@
-@media (max-width: 1165px){
+@media (max-width: 1240px){
     .contacts-section{
-        height: 960px;
+        height: 600px;
+    }
+    .contacts__container-text{
+        height: 30%;
+    }
+    .information{
+        &__address{
+            align-items: center;
+        }
+        &__containers{
+            justify-content: center;
+        }
+        &__form{
+            gap: 3%;
+        }
+        &__textarea{
+            height: 288px;
+        }
     }
 }
-@media (min-width: 1600px){
+@media (max-width: 768px){
+    .information{
+        &__address{
+            width: 230px;
+        }
+        &__ask-question{
+            width: 230px;
+        }
+        &__textarea{
+            width: 230.86px;
+        }
+    }
+}
+@media (max-width: 695px){
     .contacts-section{
         height: 1080px;
     }
+    .information{
+        justify-content: center;
+        &__address, &__ask-question{
+            height: 40%;
+        }
+        &__textarea{
+            height: 100%;
+        }
+    }
+}
+@media (min-width: 1600px){
     .l-text-section{
         &__local-name{
             font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        &__send-button{
-            font-size: 2.6rem;
         }
         &__address-text{
             font-size: 1.6rem;
         }
     }
     .information{
-        top: 100px;
+        justify-content: space-between;
         &__address{
-            width: 760px;
-            height: 30rem;
+            width: 50%;
         }
         &__containers{
-            height: 20rem;
-        }
-        &__ask-question{
-            width: 760px;
-            height: 30rem;
-        }
-        &__container-contacts{
-            width: 20rem;
-        }
-        &__item-container-contacts{
-            margin: 10px 0;
-        }
-        &__email, &__name{
-            width: 364px;
-            height: 4rem;
+            gap: 66px;
         }
         &__img{
-            width: 380px;
+            width: 400px;
             height: 350px;
         }
-        &__textarea{
-            width: 760px;
-            height: 16rem;
-        } 
-        button{
-            width: 20rem;
-            height: 4rem;
-        }
-    }
-}
-@media (max-width: 1024px){
-    .contacts-section{
-        height: 540px;
-    }
-    .information{
-        width: 700px;
-        &__address, &__ask-question{
-            width: 340px;
-            height: 13rem;
-        }
-        &__containers{
-            height: 8rem;
-        }
         &__container-contacts{
-            width: 8rem;
+            justify-content: space-between;
         }
-        &__email, &__name{
-            width: 160px;
-            height: 1.8rem;
+        .information__textarea{
+            height: 190%;
         }
-        &__img{
-            width: 180px;
-            height: 150px;
-        }
-        &__textarea{
-            width: 340px;
-            height: 7rem;
-        } 
         button{
-            width: 8rem;
-            height: 1.8rem;
-        }
-    }
-}
-@media (max-width: 425px){
-    .contacts-section{
-        height: 1000px;
-    }
-    .information{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        height: 500px;
-        &__address, &__ask-question{
-            width: 340px;
-            height: 13rem;
-        }
-        &__containers{
-            height: 8rem;
-        }
-        &__container-contacts{
-            width: 8rem;
-        }
-        &__email, &__name{
-            width: 160px;
-            height: 1.8rem;
-        }
-        &__img{
-            width: 180px;
-            height: 150px;
-        }
-        &__textarea{
-            width: 340px;
-            height: 7rem;
-        } 
-        button{
-            width: 8rem;
-            height: 1.8rem;
+            z-index: 10000;
+            width: 320px;
+            height: 64px;
+            margin: 100px auto auto auto;
         }
     }
 }

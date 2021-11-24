@@ -1,140 +1,92 @@
-@media (max-width: 1165px) {
+@media (max-width: 1240px) {
   .contacts-section {
-    height: 960px;
+    height: 600px;
+  }
+  .contacts__container-text {
+    height: 30%;
+  }
+  .information__address {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .information__containers {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .information__form {
+    gap: 3%;
+  }
+  .information__textarea {
+    height: 288px;
+  }
+}
+
+@media (max-width: 768px) {
+  .information__address {
+    width: 230px;
+  }
+  .information__ask-question {
+    width: 230px;
+  }
+  .information__textarea {
+    width: 230.86px;
+  }
+}
+
+@media (max-width: 695px) {
+  .contacts-section {
+    height: 1080px;
+  }
+  .information {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .information__address, .information__ask-question {
+    height: 40%;
+  }
+  .information__textarea {
+    height: 100%;
   }
 }
 
 @media (min-width: 1600px) {
-  .contacts-section {
-    height: 1080px;
-  }
   .l-text-section__local-name {
     font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  .l-text-section__send-button {
-    font-size: 2.6rem;
   }
   .l-text-section__address-text {
     font-size: 1.6rem;
   }
   .information {
-    top: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .information__address {
-    width: 760px;
-    height: 30rem;
+    width: 50%;
   }
   .information__containers {
-    height: 20rem;
-  }
-  .information__ask-question {
-    width: 760px;
-    height: 30rem;
-  }
-  .information__container-contacts {
-    width: 20rem;
-  }
-  .information__item-container-contacts {
-    margin: 10px 0;
-  }
-  .information__email, .information__name {
-    width: 364px;
-    height: 4rem;
+    gap: 66px;
   }
   .information__img {
-    width: 380px;
+    width: 400px;
     height: 350px;
   }
-  .information__textarea {
-    width: 760px;
-    height: 16rem;
-  }
-  .information button {
-    width: 20rem;
-    height: 4rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .contacts-section {
-    height: 540px;
-  }
-  .information {
-    width: 700px;
-  }
-  .information__address, .information__ask-question {
-    width: 340px;
-    height: 13rem;
-  }
-  .information__containers {
-    height: 8rem;
-  }
   .information__container-contacts {
-    width: 8rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .information__email, .information__name {
-    width: 160px;
-    height: 1.8rem;
-  }
-  .information__img {
-    width: 180px;
-    height: 150px;
-  }
-  .information__textarea {
-    width: 340px;
-    height: 7rem;
+  .information .information__textarea {
+    height: 190%;
   }
   .information button {
-    width: 8rem;
-    height: 1.8rem;
-  }
-}
-
-@media (max-width: 425px) {
-  .contacts-section {
-    height: 1000px;
-  }
-  .information {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 500px;
-  }
-  .information__address, .information__ask-question {
-    width: 340px;
-    height: 13rem;
-  }
-  .information__containers {
-    height: 8rem;
-  }
-  .information__container-contacts {
-    width: 8rem;
-  }
-  .information__email, .information__name {
-    width: 160px;
-    height: 1.8rem;
-  }
-  .information__img {
-    width: 180px;
-    height: 150px;
-  }
-  .information__textarea {
-    width: 340px;
-    height: 7rem;
-  }
-  .information button {
-    width: 8rem;
-    height: 1.8rem;
+    z-index: 10000;
+    width: 320px;
+    height: 64px;
+    margin: 100px auto auto auto;
   }
 }
 /*# sourceMappingURL=q-contacts.css.map */

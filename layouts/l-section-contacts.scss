@@ -3,33 +3,45 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+.div-contacts{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacts__container-text{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .information{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
     text-align: start;
     position: relative;
-    top: 50px;
     width: 100%;
+    height: 100%;
     &__address{
-        width: 380px;
-        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 80%;
     }
     &__containers{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        height: 10rem;
+        gap: 3.5%;
+        width: 100%;
     }
     &__itens{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-    &__ask-question{
-        width: 380px;
-        height: 15rem;
     }
     &__container-contacts{
         width: 10rem;
@@ -39,16 +51,22 @@
         margin: 5px 0;
         justify-content: space-between;
     }
+    &__ask-question{
+        margin-left: 1%;
+        width: 45%;
+        height: 85%;
+    }
     &__form{
         display: grid;
         grid-template-areas:
         'name     name     email    email'
         'textarea textarea textarea textarea'
         '.        button    button  .';
-        gap: 16px;
+        gap: 7%;
+
     }
     &__name{
-        width: 182px;
+        width: 100%;
         height: 2rem;
         border-radius: 5px;
         grid-area: name;
@@ -56,19 +74,19 @@
         border: none;
     }
     &__email{
-        width: 182px;
+        width: 100%;
         height: 2rem;
         border-radius: 5px;
         grid-area: email;
         border: none;
     }
     &__img{
-        width: 190px;
+        width: 200px;
         height: 175px;
     }
     &__textarea{
         grid-area: textarea;
-        width: 380px;
+        width: 100%;
         height: 8rem;
         background: #68a097;
         border: none;
@@ -82,6 +100,7 @@
         border: none;
         cursor: pointer;
         grid-area: button;
+        margin: auto;
     }
     input::placeholder, textarea::placeholder{
         color: #75b4aa;

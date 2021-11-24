@@ -5,16 +5,15 @@
 @import "layouts/mediaQ-layouts/mediaQ.scss";
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;    
 }
-section, img{
-    height: 40rem;
-    width: 100%;
+body{
+    overflow-x: hidden;
 }
 #services{
     background-image: url('./img/services-bg-pattern.png');
 }   
-#contacts{
+#contacts{  
     background-image: url('./img/contacts-bg-pattern.png');
 }
    
