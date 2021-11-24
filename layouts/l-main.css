@@ -1,10 +1,16 @@
+.home-section {
+  height: 100vh;
+  width: 100%;
+}
+
 .carrossel {
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .carrossel__slides-container {
-  height: 40rem;
+  height: 100%;
   -webkit-transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
   transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
   position: relative;
@@ -18,7 +24,7 @@
 
 .carrossel__imagem {
   width: 100%;
-  height: 40rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: -webkit-box;
@@ -61,9 +67,51 @@
 }
 
 .carrossel__container-text {
-  background: rgba(252, 250, 250, 0.733);
-  width: 41rem;
-  height: 12rem;
+  background: rgba(10, 10, 10, 0.733);
+  width: 45%;
+  height: 35%;
+}
+
+.services-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.div-services {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services__container-text {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .boxes {
@@ -75,19 +123,24 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .boxes__content {
   position: relative;
-  top: 50px;
   background: #c8535a;
   opacity: 0.8;
-  width: 12rem;
-  height: 16rem;
-  margin: 50px 10px 0 10px;
+  width: 21.5%;
+  height: 80%;
+  margin: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -102,9 +155,8 @@
 }
 
 .boxes__circle {
-  margin-top: 20px;
-  width: 5.5rem;
-  height: 5.5rem;
+  width: 6rem;
+  height: 6rem;
   background: #ffffff;
   border-radius: 100px;
   display: -webkit-box;
@@ -119,8 +171,8 @@
 }
 
 .boxes__inner-circle {
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background: #ffffff;
   border-radius: 100px;
   border: solid 2px #c8535a;
@@ -152,26 +204,63 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+}
+
+.div-contacts {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__container-text {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   text-align: start;
   position: relative;
-  top: 50px;
   width: 100%;
+  height: 100%;
 }
 
 .information__address {
-  width: 380px;
-  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  height: 80%;
 }
 
 .information__containers {
@@ -180,10 +269,8 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 10rem;
+  gap: 3.5%;
+  width: 100%;
 }
 
 .information__itens {
@@ -197,11 +284,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.information__ask-question {
-  width: 380px;
-  height: 15rem;
 }
 
 .information__container-contacts {
@@ -218,15 +300,21 @@
           justify-content: space-between;
 }
 
+.information__ask-question {
+  margin-left: 1%;
+  width: 45%;
+  height: 85%;
+}
+
 .information__form {
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'name     name     email    email' 'textarea textarea textarea textarea' '.        button    button  .';
-  gap: 16px;
+  gap: 7%;
 }
 
 .information__name {
-  width: 182px;
+  width: 100%;
   height: 2rem;
   border-radius: 5px;
   -ms-grid-row: 1;
@@ -238,7 +326,7 @@
 }
 
 .information__email {
-  width: 182px;
+  width: 100%;
   height: 2rem;
   border-radius: 5px;
   -ms-grid-row: 1;
@@ -249,7 +337,7 @@
 }
 
 .information__img {
-  width: 190px;
+  width: 200px;
   height: 175px;
 }
 
@@ -258,7 +346,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: textarea;
-  width: 380px;
+  width: 100%;
   height: 8rem;
   background: #68a097;
   border: none;
@@ -276,6 +364,7 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: button;
+  margin: auto;
 }
 
 .information input::-webkit-input-placeholder, .information textarea::-webkit-input-placeholder {
@@ -302,6 +391,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10000;
 }
 
 .l-text-section__container {
@@ -309,8 +399,8 @@
 }
 
 .l-text-section__title {
-  font-size: 3rem;
-  margin: 20px;
+  font-size: 3em;
+  margin: 2%;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -345,8 +435,8 @@
 
 .l-text-section__container-title {
   font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: 350;
+  margin: 10px 0 20px 0;
 }
 
 .l-text-section__text {
