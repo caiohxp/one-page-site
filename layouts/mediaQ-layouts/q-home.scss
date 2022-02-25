@@ -34,11 +34,19 @@
         }
     }
 }
-@media (min-width: 1600px){
+@media (min-width: 2180px){
     .l-text-section__carrossel-title{
         font-size: 6rem;
         b{
             font-size: 14rem;
+        }
+    }
+}
+@media (min-width: 1600px){
+    .l-text-section__carrossel-title{
+        font-size: 4.5rem;
+        b{
+            font-size: 10.5rem;
         }
     }
 }

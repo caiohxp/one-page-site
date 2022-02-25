@@ -15,7 +15,7 @@ readTextFile("./home.json", function(text){
     || document.documentElement.clientWidth
     || document.body.clientWidth;
   const img = document.querySelectorAll('.carrossel__imagem');
-  const titulo = document.querySelectorAll('.carrossel__container-text');
+  const titulo = document.querySelectorAll('.l-text-section__carrossel-title');
   for(var i = 0; i < img.length; i++){
     img[i].style.backgroundImage = `url(${data[i].imagem})`;
     titulo[i].innerHTML = `${data[i].titulo}`;
