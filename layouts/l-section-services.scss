@@ -1,5 +1,5 @@
 .services-section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,13 +22,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     height: 100%;
     &__content{
         position: relative;
         background: #c8535a;
         opacity: 0.8;
-        width: 21.5%;
-        height: 80%;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px;
         margin: 1%;
         display: flex;
         flex-wrap: wrap;

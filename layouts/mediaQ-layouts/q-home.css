@@ -3,7 +3,6 @@
     width: 500px;
   }
 }
-
 @media (max-width: 700px) {
   .l-text-section__carrossel-title {
     font-size: 2.5rem;
@@ -15,7 +14,6 @@
     width: 75%;
   }
 }
-
 @media (max-width: 590px) {
   .l-text-section__carrossel-title {
     font-size: 2rem;
@@ -24,18 +22,13 @@
     font-size: 5rem;
   }
 }
-
 @media (max-width: 490px) {
   .carrossel__container-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
-
-@media (min-width: 1600px) {
+@media (min-width: 2180px) {
   .l-text-section__carrossel-title {
     font-size: 6rem;
   }
@@ -43,4 +36,13 @@
     font-size: 14rem;
   }
 }
+@media (min-width: 1600px) {
+  .l-text-section__carrossel-title {
+    font-size: 4.5rem;
+  }
+  .l-text-section__carrossel-title b {
+    font-size: 10.5rem;
+  }
+}
+
 /*# sourceMappingURL=q-home.css.map */

@@ -1,5 +1,5 @@
-@import "l-section-home";
-@import "l-section-services";
-@import "l-section-contacts";
-@import "l-text-section";
+@use "l-section-home" as *;
+@use "l-section-services" as *;
+@use "l-section-contacts" as *;
+@use "l-text-section" as *;
 

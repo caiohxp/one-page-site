@@ -1,8 +1,8 @@
-@import "layouts/l-header";
-@import "base/fonts";
-@import "base/reset";
-@import "layouts/l-main";
-@import "layouts/mediaQ-layouts/mediaQ.scss";
+@use "layouts/l-header" as *;
+@use "base/fonts" as *;
+@use "base/reset" as *;
+@use "layouts/l-main" as *;
+@use "layouts/mediaQ-layouts/mediaQ.scss" as *;
 
 html{
     scroll-behavior: smooth;    

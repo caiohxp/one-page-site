@@ -1,79 +1,59 @@
 .l-text-section {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   z-index: 10000;
 }
-
 .l-text-section__container {
   margin: 0 16.6%;
 }
-
 .l-text-section__title {
   font-size: 3em;
   margin: 2%;
   text-transform: uppercase;
   font-weight: 300;
 }
-
 .l-text-section__larger-text {
   font-size: 1rem;
   margin: 10px;
   font-weight: 500;
 }
-
 .l-text-section__carrossel-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 3rem;
   color: #74c7d5;
   font-weight: 300;
   text-align: end;
 }
-
 .l-text-section__carrossel-title b {
   font-size: 7rem;
   font-weight: bold;
   color: #74c7d5;
 }
-
 .l-text-section__container-title {
   font-size: 1.5rem;
   font-weight: 350;
   margin: 10px 0 20px 0;
 }
-
 .l-text-section__text {
   font-size: 0.7rem;
 }
-
 .l-text-section__local-name {
   font-size: 1rem;
   color: #c0dfda;
   margin-bottom: 5px;
 }
-
 .l-text-section__up {
   text-transform: uppercase;
 }
-
 .l-text-section__send-button {
   font-size: 1.3rem;
   color: #fff;
 }
-
 .l-text-section__address-text {
   font-size: 0.8rem;
 }
+
 /*# sourceMappingURL=l-text-section.css.map */

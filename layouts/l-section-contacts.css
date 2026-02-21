@@ -1,156 +1,90 @@
 .contacts-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .div-contacts {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contacts__container-text {
   height: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .information {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: start;
   position: relative;
   width: 100%;
   height: 100%;
 }
-
 .information__address {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 45%;
   height: 80%;
 }
-
 .information__containers {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 3.5%;
   width: 100%;
 }
-
 .information__itens {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .information__container-contacts {
   width: 10rem;
 }
-
 .information__item-container-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 5px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .information__ask-question {
   margin-left: 1%;
   width: 45%;
   height: 85%;
 }
-
 .information__form {
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name     name     email    email' 'textarea textarea textarea textarea' '.        button    button  .';
+  grid-template-areas: "name     name     email    email" "textarea textarea textarea textarea" ".        button    button  .";
   gap: 7%;
 }
-
 .information__name {
   width: 100%;
   height: 2rem;
   border-radius: 5px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: name;
   background: #68a097;
   border: none;
 }
-
 .information__email {
   width: 100%;
   height: 2rem;
   border-radius: 5px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
   grid-area: email;
   border: none;
 }
-
 .information__img {
   width: 200px;
   height: 175px;
 }
-
 .information__textarea {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: textarea;
   width: 100%;
   height: 8rem;
@@ -158,7 +92,6 @@
   border: none;
   border-radius: 5px;
 }
-
 .information button {
   width: 10rem;
   height: 2rem;
@@ -166,26 +99,11 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: button;
   margin: auto;
 }
-
-.information input::-webkit-input-placeholder, .information textarea::-webkit-input-placeholder {
-  color: #75b4aa;
-}
-
-.information input:-ms-input-placeholder, .information textarea:-ms-input-placeholder {
-  color: #75b4aa;
-}
-
-.information input::-ms-input-placeholder, .information textarea::-ms-input-placeholder {
-  color: #75b4aa;
-}
-
 .information input::placeholder, .information textarea::placeholder {
   color: #75b4aa;
 }
+
 /*# sourceMappingURL=l-section-contacts.css.map */

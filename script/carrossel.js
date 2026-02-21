@@ -38,3 +38,8 @@ prevBtn.addEventListener('click', () => {
 function goToSlide(slideNumber) {
     slidesContainer.style.transform = "translateX(-" + slideWidth * slideNumber + "px)"; 
 }
+
+window.addEventListener('resize', () => {
+    slideWidth = slideImage[0].clientWidth;
+    goToSlide(currentSlide);
+});

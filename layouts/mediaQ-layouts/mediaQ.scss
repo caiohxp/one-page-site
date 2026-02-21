@@ -1,4 +1,4 @@
-@import "q-header";
-@import "q-home";
-@import "q-services";
-@import "q-contacts";
+@use "q-header" as *;
+@use "q-home" as *;
+@use "q-services" as *;
+@use "q-contacts" as *;

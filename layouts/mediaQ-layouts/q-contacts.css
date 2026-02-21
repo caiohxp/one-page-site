@@ -6,14 +6,10 @@
     height: 30%;
   }
   .information__address {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .information__containers {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .information__form {
     gap: 3%;
@@ -22,7 +18,6 @@
     height: 288px;
   }
 }
-
 @media (max-width: 768px) {
   .information__address {
     width: 230px;
@@ -34,15 +29,12 @@
     width: 230.86px;
   }
 }
-
 @media (max-width: 695px) {
   .contacts-section {
     height: 1080px;
   }
   .information {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .information__address, .information__ask-question {
     height: 40%;
@@ -51,7 +43,6 @@
     height: 100%;
   }
 }
-
 @media (min-width: 1600px) {
   .l-text-section__local-name {
     font-size: 2rem;
@@ -60,9 +51,7 @@
     font-size: 1.6rem;
   }
   .information {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .information__address {
     width: 50%;
@@ -75,9 +64,7 @@
     height: 350px;
   }
   .information__container-contacts {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .information .information__textarea {
     height: 190%;
@@ -89,4 +76,5 @@
     margin: 100px auto auto auto;
   }
 }
+
 /*# sourceMappingURL=q-contacts.css.map */
